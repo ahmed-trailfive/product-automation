@@ -24,10 +24,10 @@ app.include_router(user_router, tags=["user"], prefix="/user")
 app.include_router(product_router, tags=["product"], prefix="/product")
 
 
-if __name__ == "__main__":
-    uvicorn.run(
-        "main:app",
-        host=settings.HOST,
-        reload=settings.DEBUG_MODE,
-        port=settings.PORT,
-    )
+# if __name__ == "__main__":
+#     uvicorn.run(
+#         "main:app",
+#         host=settings.HOST,
+#         reload=settings.DEBUG_MODE,
+#         port=settings.PORT,
+#     )
